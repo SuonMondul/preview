@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Shop </title>
+
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    padding: 15px 30px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links li {
+    margin: 20px 15px;
+}
+.nav-links a {
+    color: #7238f0;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s;
+    font-size: 18px;
+}
+.nav-links a:hover {
+    background: gray;
+    border-radius: 5px;
+    border-color: black;
+}
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background: #db18ec;
+    margin: 3px 0;
+}
+/* Responsive Styles */
+@media (max-width: 790px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        background-color: #fff;
+        right: 0;
+        width: 100%;
+    }
+    .nav-links.active {
+        display: flex;
+    } 
+    .menu-toggle {
+        display: flex;
+    }
+}
+#Display{
+    position: fixed;flex-direction: column;display: flex;padding-right: 24px;padding-left: 24px;background-color: #bdb6b6;padding-bottom: 24px;
+   
+}
+#CloseAll{
+   display:flex;justify-content: center;align-items: center;
+    visibility: hidden;margin: auto;
+}
+#closebtn{
+    font-size: 24px;position: fixed;color: red;text-align: end;border: 0;background-color: #bfc0c2;margin-left: 200px;margin-top: -250px;padding: 8px;border-radius: 50%;
+}
+.Scrooll::-webkit-scrollbar{
+    width: 0px;
+
+}
+    </style>
+         <script>
+            function CloseA(){
+            document.getElementById('CloseAll').style.visibility='visible'
+            }
+          </script>
+    
+</head>
+<body >
+    
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assests/shop.png" style="width:50px;"/>
+            </div>
+         
+              <ul class="nav-links">
+                <li><a href="#home">Shirt</a></li>
+                <li><a href="#about">Toy</a></li>
+                <li><a href="#services">Shoes</a></li>
+                <li><a href="#contact">Watch</a></li>
+              </ul>
+           
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <article>
+      
+       
+        <div style="flex-direction: row;display: flex;align-items: center;">
+            <img src="assests/SupperMakert.png" width="50%"/>
+            <h1 style="color: #5215d6;">All Kinds of Shop Sell Item Priced at 2500 riel</h1>
+        </div>
+        <h1 style="text-align: center;color: #1ff651dd;">SHOPPING</h1>
+    
+        <h1 style="margin: 24px;">Shirt </h1>
+
+        <div id="CloseAll" >
+           
+            <div id="Display">
+             <h2 style="color: #050a48;text-align:center ;">ACLECA </h2>
+             <img src="assests/Qr.jpg" width="120px" />
+             <input placeholder="transferent" style="width: 120px;padding: 4px;border-radius: 4px;border: 0;margin-top: 12px;"/> 
+             <a href="https://www.acledabank.com.kh/kh/eng/" style="margin: auto;margin-top: 10px;"><Button style="background-color: rgb(21, 153, 220);border: 0;padding: 4px;border-radius: 4px;width: 90px;color: #fff;">BUY</Button></a>
+         </div>
+         </div>
+      
+          
+        <div style="display: flex;overflow-x: auto; " class="Scrooll">
+          
+            <div style="margin: 20px;background-color: #ecebeb;width: 150px;border-radius: 12px;display: flex;flex-direction: column;padding: 8px;">
+               <div style="flex-direction: row;display: flex;justify-content:space-between;">
+                <h4 style="margin-left: 20px;margin-right: 50px;">1</h4>
+                <h4>0,6$<h4>
+               </div>
+                <img src="assests/Shirt (4).png" width="150px"/>
+                <button onclick="CloseA()" style="background-color: #34afd4;border: 0 ;padding: 8px;border-radius: 12px;">Buy</button>
+            </div>
+            <div style="margin: 20px;background-color: #ecebeb;width: 150px;border-radius: 12px;display: flex;flex-direction: column;padding: 8px;">
+                <div style="flex-direction: row;display: flex;justify-content:space-between;">
+                 <h4 style="margin-left: 20px;margin-right: 50px;">1</h4>
+                 <h4>0,6$<h4>
+                </div>
+                 <img src="assests/Shirt (2).png" width="150px"/>
+                 <button  onclick="CloseA()" style="background-color: #34afd4;border: 0 ;padding: 8px;border-radius: 12px;">Buy</button>
+             </div>
+             <div style="margin: 20px;background-color: #ecebeb;width: 150px;border-radius: 12px;display: flex;flex-direction: column;padding: 8px;">
+                <div style="flex-direction: row;display: flex;justify-content:space-between;">
+                 <h4 style="margin-left: 20px;margin-right: 50px;">1</h4>
+                 <h4>0,6$<h4>
+                </div>
+                 <img src="assests/Shirt (3).png" width="150px"/>
+                 <button  onclick="CloseA()" style="background-color: #34afd4;border: 0 ;padding: 8px;border-radius: 12px;">Buy</button>
+             </div>
+             <div style="margin: 20px;background-color: #ecebeb;width: 150px;border-radius: 12px;display: flex;flex-direction: column;padding: 8px;">
+                <div style="flex-direction: row;display: flex;justify-content:space-between;">
+                 <h4 style="margin-left: 20px;margin-right: 50px;">1</h4>
+                 <h4>0,6$<h4>
+                </div>
+                 <img src="assests/Shirt (1).png" width="150px"/>
+                 <button  onclick="CloseA()" style="background-color: #34afd4;border: 0 ;padding: 8px;border-radius: 12px;">Buy</button>
+             </div>
+             <div style="margin: 20px;background-color: #ecebeb;width: 150px;border-radius: 12px;display: flex;flex-direction: column;padding: 8px;">
+                <div style="flex-direction: row;display: flex;justify-content:space-between;">
+                 <h4 style="margin-left: 20px;margin-right: 50px;">1</h4>
+                 <h4>0,6$<h4>
+                </div>
+                 <img src="assests/Shirt (5).png" width="150px"/>
+                 <button  onclick="CloseA()" style="background-color: #34afd4;border: 0 ;padding: 8px;border-radius: 12px;">Buy</button>
+             </div>
+             <div style="margin: 20px;background-color: #ecebeb;width: 150px;border-radius: 12px;display: flex;flex-direction: column;padding: 8px;">
+                <div style="flex-direction: row;display: flex;justify-content:space-between;">
+                 <h4 style="margin-left: 20px;margin-right: 50px;">1</h4>
+                 <h4>0,6$<h4>
+                </div>
+                 <img src="assests/Shirt (6).png" width="150px"/>
+                 <button  onclick="CloseA()" style="background-color: #34afd4;border: 0 ;padding: 8px;border-radius: 12px;">Buy</button>
+             </div>
+             <div style="margin: 20px;background-color: #ecebeb;width: 150px;border-radius: 12px;display: flex;flex-direction: column;padding: 8px;">
+                <div style="flex-direction: row;display: flex;justify-content:space-between;">
+                 <h4 style="margin-left: 20px;margin-right: 50px;">1</h4>
+                 <h4>0,6$<h4>
+                </div>
+                 <img src="assests/Shirt (7).png" width="150px"/>
+                 <button  onclick="CloseA()" style="background-color: #34afd4;border: 0 ;padding: 8px;border-radius: 12px;">Buy</button>
+             </div>
+             <div style="margin: 20px;background-color: #ecebeb;width: 150px;border-radius: 12px;display: flex;flex-direction: column;padding: 8px;">
+                <div style="flex-direction: row;display: flex;justify-content:space-between;">
+                 <h4 style="margin-left: 20px;margin-right: 50px;">1</h4>
+                 <h4>0,6$<h4>
+                </div>
+                 <img src="assests/Shirt (8).png" width="150px"/>
+                 <button  onclick="CloseA()" style="background-color: #34afd4;border: 0 ;padding: 8px;border-radius: 12px;">Buy</button>
+             </div>
+          
+             
+        </div>
+         <h2 style="margin: 20px;">TOYS</h2>
+        <div style="display: flex;overflow-x: auto;" class="Scrooll">
+            <div style="margin: 20px;background-color: #ecebeb;width: 150px;border-radius: 12px;display: flex;flex-direction: column;padding: 8px;">
+                <div style="flex-direction: row;display: flex;justify-content:space-between;">
+                 <h4 style="margin-left: 20px;margin-right: 50px;">1</h4>
+                 <h4>0,6$<h4>
+                </div>
+                 <img src="assests/car (1).png" width="150px"/>
+                 <button  onclick="CloseA()" style="background-color: #34afd4;border: 0 ;padding: 8px;border-radius: 12px;">Buy</button>
+             </div>
+             <div style="margin: 20px;background-color: #ecebeb;width: 150px;border-radius: 12px;display: flex;flex-direction: column;padding: 8px;">
+                <div style="flex-direction: row;display: flex;justify-content:space-between;">
+                 <h4 style="margin-left: 20px;margin-right: 50px;">1</h4>
+                 <h4>0,6$<h4>
+                </div>
+                 <img src="assests/Bullet (1).png" width="150px"/>
+                 <button  onclick="CloseA()" style="background-color: #34afd4;border: 0 ;padding: 8px;border-radius: 12px;">Buy</button>
+             </div>
+             <div style="margin: 20px;background-color: #ecebeb;width: 150px;border-radius: 12px;display: flex;flex-direction: column;padding: 8px;">
+                <div style="flex-direction: row;display: flex;justify-content:space-between;">
+                 <h4 style="margin-left: 20px;margin-right: 50px;">1</h4>
+                 <h4>0,6$<h4>
+                </div>
+                 <img src="assests/car (2).png" width="150px"/>
+                 <button  onclick="CloseA()" style="background-color: #34afd4;border: 0 ;padding: 8px;border-radius: 12px;">Buy</button>
+             </div>
+             <div style="margin: 20px;background-color: #ecebeb;width: 150px;border-radius: 12px;display: flex;flex-direction: column;padding: 8px;">
+                <div style="flex-direction: row;display: flex;justify-content:space-between;">
+                 <h4 style="margin-left: 20px;margin-right: 50px;">1</h4>
+                 <h4>0,6$<h4>
+                </div>
+                 <img src="assests/car (3).png" width="150px"/>
+                 <button  onclick="CloseA()" style="background-color: #34afd4;border: 0 ;padding: 8px;border-radius: 12px;">Buy</button>
+             </div>
+             <div style="margin: 20px;background-color: #ecebeb;width: 150px;border-radius: 12px;display: flex;flex-direction: column;padding: 8px;">
+                <div style="flex-direction: row;display: flex;justify-content:space-between;">
+                 <h4 style="margin-left: 20px;margin-right: 50px;">1</h4>
+                 <h4>0,6$<h4>
+                </div>
+                 <img src="assests/car (4).png" width="150px"/>
+                 <button  onclick="CloseA()" style="background-color: #34afd4;border: 0 ;padding: 8px;border-radius: 12px;">Buy</button>
+             </div>
+             <div style="margin: 20px;background-color: #ecebeb;width: 150px;border-radius: 12px;display: flex;flex-direction: column;padding: 8px;">
+                <div style="flex-direction: row;display: flex;justify-content:space-between;">
+                 <h4 style="margin-left: 20px;margin-right: 50px;">1</h4>
+                 <h4>0,6$<h4>
+                </div>
+                 <img src="assests/Bullet (2).png" width="150px"/>
+                 <button  onclick="CloseA()" style="background-color: #34afd4;border: 0 ;padding: 8px;border-radius: 12px;">Buy</button>
+             </div>
+             <div style="margin: 20px;background-color: #ecebeb;width: 150px;border-radius: 12px;display: flex;flex-direction: column;padding: 8px;">
+                <div style="flex-direction: row;display: flex;justify-content:space-between;">
+                 <h4 style="margin-left: 20px;margin-right: 50px;">1</h4>
+                 <h4>0,6$<h4>
+                </div>
+                 <img src="assests/Bullet (3).png" width="150px"/>
+                 <button  onclick="CloseA()" style="background-color: #34afd4;border: 0 ;padding: 8px;border-radius: 12px;margin-top: 30px;">Buy</button>
+             </div>
+             <div style="margin: 20px;background-color: #ecebeb;width: 150px;border-radius: 12px;display: flex;flex-direction: column;padding: 8px;">
+                <div style="flex-direction: row;display: flex;justify-content:space-between;">
+                 <h4 style="margin-left: 20px;margin-right: 50px;">1</h4>
+                 <h4>0,6$<h4>
+                </div>
+                 <img src="assests/Bullet (4).png" width="150px"/>
+                 <button  onclick="CloseA()" style="background-color: #34afd4;border: 0 ;padding: 8px;border-radius: 12px;margin-top: 60px;">Buy</button>
+             </div>
+        </div>
+        <h2 style="margin: 20px;">Shoes</h2>
+
+           <div style="display: flex;overflow-x: auto;" class="Scrooll">
+            <div style="margin: 20px;background-color: #ecebeb;width: 150px;border-radius: 12px;display: flex;flex-direction: column;padding: 8px;">
+                <div style="flex-direction: row;display: flex;justify-content:space-between;">
+                 <h4 style="margin-left: 20px;margin-right: 50px;">1</h4>
+                 <h4>0,6$<h4>
+                </div>
+                 <img src="assests/Shoes (1).png" width="150px"/>
+                 <button  onclick="CloseA()" style="background-color: #34afd4;border: 0 ;padding: 8px;border-radius: 12px;">Buy</button>
+             </div>
+             <div style="margin: 20px;background-color: #ecebeb;width: 150px;border-radius: 12px;display: flex;flex-direction: column;padding: 8px;">
+                <div style="flex-direction: row;display: flex;justify-content:space-between;">
+                 <h4 style="margin-left: 20px;margin-right: 50px;">1</h4>
+                 <h4>0,6$<h4>
+                </div>
+                 <img src="assests/Shoes (2).png" width="150px"/>
+                 <button  onclick="CloseA()" style="background-color: #34afd4;border: 0 ;padding: 8px;border-radius: 12px;margin-top: 20px;">Buy</button>
+             </div>
+             <div style="margin: 20px;background-color: #ecebeb;width: 150px;border-radius: 12px;display: flex;flex-direction: column;padding: 8px;">
+                <div style="flex-direction: row;display: flex;justify-content:space-between;">
+                 <h4 style="margin-left: 20px;margin-right: 50px;">1</h4>
+                 <h4>0,6$<h4>
+                </div>
+                 <img src="assests/Shoes (3).png" width="150px"/>
+                 <button  onclick="CloseA()"  style="background-color: #34afd4;border: 0 ;padding: 8px;border-radius: 12px;">Buy</button>
+             </div>
+             <div style="margin: 20px;background-color: #ecebeb;width: 150px;border-radius: 12px;display: flex;flex-direction: column;padding: 8px;">
+                <div style="flex-direction: row;display: flex;justify-content:space-between;">
+                 <h4 style="margin-left: 20px;margin-right: 50px;">1</h4>
+                 <h4>0,6$<h4>
+                </div>
+                 <img src="assests/Shoes (4).png" width="150px" />
+                 <button  onclick="CloseA()" style="background-color: #34afd4;border: 0 ;padding: 8px;border-radius: 12px;">Buy</button>
+             </div>
+           </div>
+           <h2 style="margin: 20px;">Watch </h2>
+           <div style="display: flex;overflow-x: auto;" class="Scrooll">
+            <div style="margin: 20px;background-color: #ecebeb;width: 150px;border-radius: 12px;display: flex;flex-direction: column;padding: 8px;">
+                <div style="flex-direction: row;display: flex;justify-content:space-between;">
+                 <h4 style="margin-left: 20px;margin-right: 50px;">1</h4>
+                 <h4>0,6$<h4>
+                </div>
+                 <img src="assests/Clock (1).png" width="150px"/>
+                 <button  onclick="CloseA()" style="background-color: #34afd4;border: 0 ;padding: 8px;border-radius: 12px;">Buy</button>
+             </div>
+             <div style="margin: 20px;background-color: #ecebeb;width: 150px;border-radius: 12px;display: flex;flex-direction: column;padding: 8px;">
+                <div style="flex-direction: row;display: flex;justify-content:space-between;">
+                 <h4 style="margin-left: 20px;margin-right: 50px;">1</h4>
+                 <h4>0,6$<h4>
+                </div>
+                 <img src="assests/Clock (2).png" width="150px"/>
+                 <button  onclick="CloseA()" style="background-color: #34afd4;border: 0 ;padding: 8px;border-radius: 12px;margin-top: 70px;">Buy</button>
+             </div>
+             <div style="margin: 20px;background-color: #ecebeb;width: 150px;border-radius: 12px;display: flex;flex-direction: column;padding: 8px;">
+                <div style="flex-direction: row;display: flex;justify-content:space-between;">
+                 <h4 style="margin-left: 20px;margin-right: 50px;">1</h4>
+                 <h4>0,6$<h4>
+                </div>
+                 <img src="assests/Clock (3).png" width="150px"/>
+                 <button  onclick="CloseA()" style="background-color: #34afd4;border: 0 ;padding: 8px;border-radius: 12px;">Buy</button>
+             </div>
+             <div style="margin: 20px;background-color: #ecebeb;width: 150px;border-radius: 12px;display: flex;flex-direction: column;padding: 8px;">
+                <div style="flex-direction: row;display: flex;justify-content:space-between;">
+                 <h4 style="margin-left: 20px;margin-right: 50px;">1</h4>
+                 <h4>0,6$<h4>
+                </div>
+                 <img src="assests/Clock (4).png" width="150px"/>
+                 <button  onclick="CloseA()" style="background-color: #34afd4;border: 0 ;padding: 8px;border-radius: 12px;margin-top: 40px;">Buy</button>
+             </div>
+             <div style="margin: 20px;background-color: #ecebeb;width: 150px;border-radius: 12px;display: flex;flex-direction: column;padding: 8px;">
+                <div style="flex-direction: row;display: flex;justify-content:space-between;">
+                 <h4 style="margin-left: 20px;margin-right: 50px;">1</h4>
+                 <h4>0,6$<h4>
+                </div>
+                 <img src="assests/Clock (5).png" width="150px"/>
+                 <button  onclick="CloseA()" style="background-color: #34afd4;border: 0 ;padding: 8px;border-radius: 12px;">Buy</button>
+             </div>
+             <div style="margin: 20px;background-color: #ecebeb;width: 150px;border-radius: 12px;display: flex;flex-direction: column;padding: 8px;">
+                <div style="flex-direction: row;display: flex;justify-content:space-between;">
+                 <h4 style="margin-left: 20px;margin-right: 50px;">1</h4>
+                 <h4>0,6$<h4>
+                </div>
+                 <img src="assests/Clock (6).png" width="150px"/>
+                 <button  onclick="CloseA()" style="background-color: #34afd4;border: 0 ;padding: 8px;border-radius: 12px;">Buy</button>
+             </div>
+           </div>
+    </article>
+   <footer style="background-color: rgb(219, 218, 218);padding: 24px;margin-top: 20px;">
+     <div style="flex-direction: row;display: flex;align-items: center;justify-content: space-between;margin-top: 40px;">
+        <div style="flex-direction:column;display: flex;margin: 24px;height: 250px;justify-content: space-between;">
+         <div style="flex-direction: row; display: flex;align-items: center;">
+            <img src="assests/Makert.png" width="100px"/>
+            <p style="color: #d94615;" >CEO  
+                SUON MONDUL</p>
+         </div>
+         <div style="display: flex;align-items: center;flex-direction: column;">
+            <div style="flex-direction: row; display: flex;align-items: center;width:150px; justify-content: space-between;">
+                <img src="assests/Facebook.png" width="40px" style="margin-right: 20px;margin-left: 15px;"/>
+              <a href="https://www.facebook.com/suon.mondul.3/" style="text-decoration: none;">FACEBOOK</a>
+            </div>
+            <div style="flex-direction: row; display: flex;align-items: center;width:150px; justify-content: space-between;">
+                <img src="assests/Youtube.png" width="60px"/>
+              <a href="https://www.youtube.com/"  style="text-decoration: none;">YOUTUBE</a>
+            </div>
+            <div style="flex-direction: row; display: flex;align-items: center;width:150px; justify-content: space-between;">
+                <img src="assests/Telegram.png" width="60px"/>
+              <a href="https://web.telegram.org/a/"  style="text-decoration: none;">TELEGRAM</a>
+            </div>
+            <div style="flex-direction: row; display: flex;align-items: center;width:150px; justify-content: space-between;">
+                <img src="assests/GitHub.png" width="60px"/>
+              <a href="https://github.com/SuonMondul"  style="text-decoration: none;">GITHUB</a>
+            </div>
+            </div>
+         </div>
+        <div style="flex-direction:column;display: flex;margin: 24px;height: 100px;justify-content: space-between;">
+            <p >ITEM 2000</p>
+            <p >Stock Markert 600$</p>
+          </div>
+     </div>
+     <div style="display: flex;justify-content: center;align-items: center;margin-top: 50px;">
+     <div style="height: 5px;width: 70%;background-color: #646d65;border-radius: 1px;"></div>
+    </div>
+    <div style="margin: 24px;">
+        <p >Copy right 2024  Owner name Suon Mondul </p>
+    </div>
+    </footer>
+    <script >const mobileMenu = document.getElementById("mobile-menu");
+        const navLinks = document.querySelector(".nav-links");
+        
+        mobileMenu.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+        </script>
+      
+            
+</body>
+</html>
